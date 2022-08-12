@@ -1,0 +1,28 @@
+
+.flex {
+    display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.letter-spacing-s {
+    letter-spacing: .2rem;
+}
+.heading-title {
+    max-width: 50ch;
+}
+.heading-secondary {
+    margin-block: 2rem;
+}
+.font-12 {
+    font-size: 1.2rem;
+}
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 2rem);
+}
+
+.decoration-none{
+    text-decoration: none;
+}

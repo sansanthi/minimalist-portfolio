@@ -1,0 +1,129 @@
+@use '../globals/variables';
+.home, body {
+    background-color: #FAFAFA;
+    padding-top: 3.2rem;
+}
+header, main {
+    padding-inline: 3.2rem;
+}
+.hero-img {
+    display: block;
+    width: max(31.1rem, 100%);
+}
+
+.section-intro {
+    padding-bottom: 9.6rem;
+}
+
+.section-about {
+    padding-bottom: 10rem;
+
+    img {
+        display: block;
+        width: max(31.1rem, 100%);
+    }
+}
+
+.section-contact {
+    text-align: center;
+    padding-bottom: 8rem;
+    --flow-space: 4rem;
+}
+.about-details {
+    border-top: 2px solid variables.$border-color;
+    border-bottom: 2px solid variables.$border-color;
+    padding-bottom: 5rem;
+}
+
+
+@media (min-width: 48em) {
+    .section-intro {
+        position: relative;
+        padding: 0;
+        margin-bottom: 9.6rem;
+    }
+    .hero-box {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 70%;
+        background-color: white;
+        padding: 5.6rem 5.6rem 0 0;
+    }
+
+    .section-about {
+        display: grid;
+        grid-template-columns: minmax(2rem, 1fr) 1fr;
+        grid-template-rows: 600px;
+        gap: 7rem;
+        
+        * {
+            margin: 0;
+        }
+        .profile-img {
+            height: 100%;
+        }
+    }
+    .about-details {
+        padding-block: 4.8rem;
+
+        *:where(:not(:first-child)) {
+            margin-top: 2.4rem;
+        }
+        p {
+            line-height: 1.8;
+        }
+    }
+
+    .section-contact {
+        display: grid;
+        grid-template-columns: minmax(36rem, 1fr) minmax(2rem, 1fr) 1fr;
+        gap: 3rem;
+        justify-items: center;
+        align-items: center;
+        * {
+            margin: 0;
+        }
+        [aria-hidden="true"] {
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: variables.$border-color;
+        }
+    }
+    
+}
+
+@media (min-width: 75em) {
+    .home {
+        padding-top: 6.4rem;
+    }
+
+    header, main {
+        padding-inline: 16.5rem;
+    }
+    .hero-box {
+        // max-width: 41%;
+        max-width: 60ch;
+    }
+    .about-me {
+        padding-top: 5rem;
+    }
+    .section-about {
+        gap: 12.5rem;
+        grid-template-columns: minmax(50rem, 1fr) minmax(30rem, 1fr) min-content;
+        grid-template-rows: auto;
+    }
+    .section-contact {
+        text-align: left;
+        grid-template-columns: minmax(30rem, 1fr) minmax(52rem, 1fr) max-content;
+        gap: 3.2rem;
+
+        h2 {
+            align-self: start;
+        }
+    }
+    
+}
+
+

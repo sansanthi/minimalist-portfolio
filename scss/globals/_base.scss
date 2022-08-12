@@ -1,0 +1,29 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Public+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+:root {
+    --font-family-primary: 'Public Sans', sans-serif;
+    --font-family-secondary: 'Ibarra Real Nova', sans-serif; 
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    color: variables.$color-primary-gray-dark-blue;
+    font-weight: 400;
+}
+p {
+    color: rgba(#33323e, 0.8);
+}
+ul {
+    list-style: none;
+}
+
+
+
+

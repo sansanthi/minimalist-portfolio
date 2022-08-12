@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <header class="header flex">
+        <div>
+            <img src="images/logo.svg" alt="space tourism logo" class="logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-nav"><span class="sr-only"
+                aria-expanded="false">Menu</span></button>
+        <nav data-visible="false">
+            <ul class="primary-navigation flex flow">
+                <li class="nav-link"><a href="index.html" class="nav-item decoration-none uppercase">Home</a></li>
+                <li class="nav-link"><a href="portfolio-index.html"
+                        class="nav-item decoration-none uppercase">Portfolio</a></li>
+                <li class="nav-link"><a href="#" class="nav-item decoration-none uppercase">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-section">
+        <article class="introducton flow">
+            <h1>Get in Touch</h1>
+            <div class="self-intro">
+                <p>
+                    I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.
+                </p>
+                <ul class="social-links flex">
+                    <li><a href="#"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
+                    <li><a href="#"><img src="images/icons/twitter.svg" class="social-item" alt=""></a></li>
+                    <li><a href="#"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="contact-me flow">
+            <h1>Contact Me</h1>
+            <form class="contact">
+                <div class="input-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="input-control">
+                    <label for="name">Email</label>
+                <input type="email" id="email" placeholder="email@example.com">
+                </div>
+                <div class="input-control">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="How can I help?"></textarea>
+                </div>
+                <button class="btn btn-blue btn-mesg uppercase letter-spacing-s">Send message</button>
+            </form>
+        </article>
+    </main>
+    <footer class="flex">
+        <img src="images/logo.svg" alt="" class="footer-logo">
+        <ul class="footer-nav flex">
+            <li><a href="#" class="uppercase">home</a></li>
+            <li><a href="#" class="uppercase">portfolio</a></li>
+            <li><a href="#" class="uppercase">contact me</a></li>
+        </ul>
+        <ul class="social-links flex">
+            <li><a href="#"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/twitter.svg" class="social-item" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
+        </ul>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

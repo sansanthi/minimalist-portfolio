@@ -1,0 +1,39 @@
+@use '../globals/global';
+
+.introducton  {
+    border-block: 1px solid global.$border-color;
+    padding-block: 3.2rem;
+    margin-bottom: 2.4rem;
+
+    .social-links {
+        gap: 2rem;
+        align-items: center;
+        margin-top: 2.4rem;
+    }
+}
+// .social-icon {
+
+// }
+
+
+.contact-me {
+    margin-bottom: 8rem;
+}
+
+@media (min-width: 50em) {
+    .introducton, 
+    .contact-me {
+        display: flex;
+        gap: 12.5rem;
+    }
+    .introducton h1, 
+    .contact-me h1 {
+        flex-basis: 35%;
+    }
+    .self-intro, 
+    .contact {
+        flex-basis: 55%;
+        margin-top: 0;
+    }
+    
+}

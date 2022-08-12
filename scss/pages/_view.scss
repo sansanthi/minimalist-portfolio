@@ -1,0 +1,212 @@
+@use '../globals/global';
+
+.portfolio-view {
+    padding-top: 3.2rem;
+    font-size: 1.5rem;
+    line-height: 1.9;
+}
+picture img:not(.logo) {
+    display: block;
+    width: max(31.1rem, 100%);
+}
+.project-image {
+    width: max(31.1rem, 100%);
+    margin-bottom: 2.4rem;
+
+    @media (min-width: 50em) {
+        margin-bottom: 10rem;
+    }
+}
+.project-details {
+    @media (min-width: 50em) {
+        // display: grid;
+        // grid-template-columns: minmax(30%, 1fr) minmax(50%, 1fr);
+        // grid-template-rows: 30rem auto;
+        // column-gap: 12.5rem;
+        // .about-project {
+        //     grid-column: 1;
+        // }
+        // .project-background {
+        //     grid-column: 2;
+        //     grid-row: 1;
+        //     margin: 0;
+        // }
+        // .static-view {
+        //     grid-column: 2;
+        //     grid-row: 2;
+        // }
+
+        display: flex;
+        gap: 12.5rem;
+        align-items: flex-start;
+        
+        .about-project {
+            flex-basis: 40rem;
+        }
+        .project-description {
+            flex-basis: 50rem;
+            border: 0;
+            padding: 0;
+        }
+        .project-background {
+            margin: 0;
+           
+        }
+    }
+}
+.about-project {
+    border-top: 1.5px solid global.$border-color;
+    border-bottom: 1.5px solid global.$border-color;
+    padding-block: 2.4rem;
+    --flow-space: 2.4rem;
+    margin-bottom: 2.4rem;
+
+    // @media (min-width: 40em) {
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr) minmax(50%, 1fr);
+    //     grid-template-rows: 5rem auto 1fr;
+    //     grid-template-areas: "header header content"
+    //                         "tags tags content"
+    //                         "footer footer content";
+    //     column-gap: 1.2rem;
+    // }
+    // h1 {
+    //     @media (min-width: 40em) {
+    //         grid-area: header;
+    //     }
+    // }
+    // button {
+    //     @media (min-width: 40em) {
+    //         grid-area: footer;
+    //     }
+    // }
+    // .tags {
+    //     @media (min-width: 40em) {
+    //         grid-area: tags;
+    //     }
+    // }
+    // p {
+    //     @media (min-width: 40em) {
+    //         grid-area: content;
+    //     }
+    // }
+    // @media (min-width: 40em) and (max-width: 49.99em) {
+        
+    // }
+    @media (min-width: 40em) and (max-width: 49.99em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) minmax(50%, 1fr);
+        grid-template-rows: 5rem auto 1fr;
+        grid-template-areas: "header header content"
+                            "tags tags content"
+                            "footer footer content";
+        column-gap: 1.2rem;
+
+        h1 {
+            grid-area: header;
+        }
+        button {
+            grid-area: footer;
+        }
+        .tags {
+            grid-area: tags;
+        }
+        p {
+            grid-area: content;
+        }
+    }
+
+    
+}
+.tags > * {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: global.$color-primary-cyan;
+    
+}
+.project-background {
+    // --flow-space: 3.2rem;
+    margin-block: 3.8rem;
+
+    // @media (min-width: 40em) {
+    //     p {
+    //         max-width: 80ch;
+    //     }
+    // }
+}
+.heading-project {
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #33323D;
+    margin-bottom: 3.2rem;
+}
+.static-view {
+    margin-bottom: 6.4rem;
+}
+
+.static-image {
+    margin-bottom: 3.2rem;
+}
+
+// Prev and next buttons
+.prev-next {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid global.$border-color-2;
+    border-block: 1px solid global.$border-color-2;
+    padding-block: 2.4rem;
+    margin-bottom: 6.4rem;
+
+}
+.prev, .next {
+    @media (min-width: 40em) {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.next {
+    @media (min-width: 40em) {
+        flex-direction: row-reverse;
+    }
+}
+.next {
+    text-align: right;
+}
+
+.prev-btn, .next-btn {
+    background-color: transparent;
+    border: transparent;
+    color: #33323D;
+
+    @media (min-width: 40em) {
+        align-self: center;
+    }
+}
+
+
+.arrow-left, .arrow-right {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    // margin-inline: auto;
+    // margin-bottom: 1rem;
+    margin: 1rem auto;
+    border-top: 1px solid #33323D;
+    border-left: 1px solid #33323D;
+}
+
+.arrow-left {
+    transform: rotate(-45deg);
+}
+.arrow-right {
+    transform: rotate(135deg);
+}
+.project-name {
+    .heading-project {
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1.6rem;
+        color: rgba(#33323D, .5);
+    }
+}
