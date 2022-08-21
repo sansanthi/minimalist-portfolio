@@ -33,18 +33,19 @@
                 </p>
                 <ul class="social-links flex">
                     <li><a href="#"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
-                    <li><a href="#"><img src="images/icons/twitter.svg" class="social-item" alt=""></a></li>
                     <li><a href="#"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
                 </ul>
             </div>
         </article>
         <article class="contact-me flow">
             <h1>Contact Me</h1>
-            <form class="contact">
+            <form class="contact" action="https://formsubmit.co/sansanthi20@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Email here!">
                 <div class="input-control">
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Name">
                 </div>
+                <input type="hidden" name="_next" value="https://minmalist-portfolio-me.netlify.app/thankyou.html">
                 <div class="input-control">
                     <label for="name">Email</label>
                 <input type="email" id="email" placeholder="email@example.com">
@@ -66,10 +67,12 @@
         </ul>
         <ul class="social-links flex">
             <li><a href="#"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/twitter.svg" class="social-item" alt=""></a></li>
             <li><a href="#"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
         </ul>
     </footer>
     <script type="module" src="index.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
+    
 </body>
 </html>
