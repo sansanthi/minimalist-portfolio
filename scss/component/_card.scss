@@ -1,0 +1,16 @@
+@use '../globals/global';
+.card {
+    width: clamp(40rem, 30vw, 60rem);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+    text-align: center;
+    padding-block: 4rem;
+    background-color: global.$color-primary-darkblue;
+    * {
+        color: white;
+    }
+    h1 {
+        color: global.$color-primary-cyan;
+        margin-bottom: 2rem;
+    }
+}

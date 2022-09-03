@@ -41,10 +41,10 @@ picture img:not(.logo) {
         align-items: flex-start;
         
         .about-project {
-            flex-basis: 40rem;
+            flex-basis: 40%;
         }
         .project-description {
-            flex-basis: 50rem;
+            flex-basis: 50%;
             border: 0;
             padding: 0;
         }
@@ -159,6 +159,10 @@ picture img:not(.logo) {
 
 }
 .prev, .next {
+
+    &:hover {
+        cursor: pointer;
+    }
     @media (min-width: 40em) {
         display: flex;
         gap: 2rem;
@@ -177,7 +181,10 @@ picture img:not(.logo) {
     background-color: transparent;
     border: transparent;
     color: #33323D;
-
+    
+    &:hover {
+        cursor: pointer;
+    }
     @media (min-width: 40em) {
         align-self: center;
     }
@@ -209,4 +216,13 @@ picture img:not(.logo) {
         font-size: 1.6rem;
         color: rgba(#33323D, .5);
     }
+}
+
+
+// Thank you page
+.thankyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

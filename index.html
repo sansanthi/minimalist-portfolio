@@ -31,44 +31,43 @@
                 <img src="images/homepage/mobile/image-homepage-hero@2x.jpg" class="hero-img" alt="intro image">
             </picture>
             <div class="hero-box flow">
-                <h1 class="heading-title">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+                <h1 class="heading-title">Hey, I’m San San Thi and I love building beautiful websites</h1>
                 <div class="flex about-me">
                     <span>
                         <img src="images/icons/down-arrows.svg" alt="">
                     </span>
-                    <button class="btn btn-blue uppercase font-12 letter-spacing-s">About me</button>
+                    <a href="#about-me" class="btn btn-link btn-blue uppercase font-12 letter-spacing-s">About me</a>
                 </div>
             </div>
         </section>
-        <section class="section-about flow">
+        <section class="section-about flow" id="about-me">
             <picture>
-                <source srcset="images/homepage/desktop/image-homepage-profile@2x.jpg" media="(min-width: 1000px)">
-                <source srcset="images/homepage/tablet/image-homepage-profile@2x.jpg" media="(min-width: 600px)">
-                <img src="images/homepage/mobile/image-homepage-profile@2x.jpg" class="profile-img" alt="">
+                <!-- <source srcset="images/homepage/desktop/image-homepage-profile@2x.jpg" media="(min-width: 1000px)">
+                <source srcset="images/homepage/tablet/image-homepage-profile@2x.jpg" media="(min-width: 600px)"> -->
+                <img src="images/homepage/sansanthi.jpg" class="profile-img" alt="">
             </picture>
             <div class="about-details flow">
                 <h2 class="heading-secondary">About Me</h2>
-                <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
-                <button class="btn btn-white uppercase font-12 letter-spacing-s">go to portfolio</button>
+                <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. I'm learning React and frontend development techniques. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’d love you to check out my work.</p>
+                <button class="btn btn-white uppercase font-12 letter-spacing-s" onclick="location.href='portfolio-index.html' ">go to portfolio</button>
             </div>
         </section>
         <section class="section-contact flow">
             <h2>Interested in doing a project together?</h2>
             <div aria-hidden="true"></div>
-            <button class="btn btn-white uppercase font-12 letter-spacing-s">contact me</button>
+            <button class="btn btn-white uppercase font-12 letter-spacing-s" onclick="location.href='contact.html' ">contact me</button>
         </section>
     </main>
     <footer class="flex">
         <img src="images/logo.svg" alt="" class="footer-logo">
         <ul class="footer-nav flex">
-            <li><a href="#" class="uppercase">home</a></li>
-            <li><a href="#" class="uppercase">portfolio</a></li>
-            <li><a href="#" class="uppercase">contact me</a></li>
+            <li><a href="index.html" class="uppercase">home</a></li>
+            <li><a href="portfolio-index.html" class="uppercase">portfolio</a></li>
+            <li><a href="contact.html" class="uppercase">contact me</a></li>
         </ul>
         <ul class="social-links flex">
-            <li><a href="#"><img src="images/icons/github.svg" class="social-icon" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/twitter.svg" class="social-icon" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/linkedin.svg" class="social-icon" alt=""></a></li>
+            <li><a href="https://github.com/sansanthi"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/san-san-thi-2ba5b615a/"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
         </ul>
     </footer>
     <script type="module" src="index.js"></script>

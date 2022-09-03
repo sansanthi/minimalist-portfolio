@@ -16,6 +16,8 @@ body {
     font-family: var(--font-family-primary);
     color: variables.$color-primary-gray-dark-blue;
     font-weight: 400;
+    width: 100vw;
+    margin: 0 auto;
 }
 p {
     color: rgba(#33323e, 0.8);

@@ -5,6 +5,10 @@
     padding: 1.8rem 0;
     border: 1px solid transparent;
     text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 .about-me {
     // justify-content: space-between;
@@ -44,5 +48,5 @@
 }
 .btn-link {
     text-decoration: none;
-    display: block;
+    display: inline-block;
 }

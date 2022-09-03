@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> -->
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -28,8 +29,8 @@
     </header>
     <main class="portfolio-main flow">
         <section class="section-project">
-            <div class="project flow">
-                <!-- <picture>
+            <!-- <div class="project flow">
+                <picture>
                     <source srcset="./images/portfolio/desktop/image-portfolio-manage@2x.jpg" media="(min-width: 1000px)" class="project-img">
                     <source srcset="./images/portfolio/tablet/image-portfolio-manage@2x.jpg" media="(min-width: 600px)" class="project-img">
                     <img src="./images/portfolio/mobile/image-portfolio-manage@2x.jpg" alt="" class="project-img">
@@ -38,8 +39,8 @@
                     <h2>Manage</h2>
                     <p>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>   
                     <a href="portfolio-view.html" class="btn btn-white btn-link uppercase">view project</a>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
             <!-- <div class="project flow">
                 <picture>
                     <source srcset="./images/portfolio/desktop/image-portfolio-bookmark@2x.jpg" media="(min-width: 1000px)" class="project-img">
@@ -81,24 +82,25 @@
         <section class="section-contact flow">
             <h2>Interested in doing a project together?</h2>
             <div aria-hidden="true"></div>
-            <button class="btn btn-white uppercase font-12 letter-spacing-s">contact me</button>
+            <button class="btn btn-white uppercase font-12 letter-spacing-s" onclick="location.href='contact.html' ">contact me</button>
         </section>
     </main>
     <footer class="flex">
         <img src="images/logo.svg" alt="" class="footer-logo">
         <ul class="footer-nav flex">
-            <li><a href="#" class="uppercase">home</a></li>
-            <li><a href="#" class="uppercase">portfolio</a></li>
-            <li><a href="#" class="uppercase">contact me</a></li>
+            <li><a href="index.html" class="uppercase">home</a></li>
+            <li><a href="portfolio-index.html" class="uppercase">portfolio</a></li>
+            <li><a href="contact.html" class="uppercase">contact me</a></li>
         </ul>
         <ul class="social-links flex">
-            <li><a href="#"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/twitter.svg" class="social-item" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
+            <li><a href="https://github.com/sansanthi"><img src="images/icons/github.svg" class="social-item" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/san-san-thi-2ba5b615a/"><img src="images/icons/linkedin.svg" class="social-item" alt=""></a></li>
         </ul>
     </footer>
+
     <script type="module" src="index.js"></script>
     <script src="portfolio.js"></script>
+    
 </body>
 
 </html>
